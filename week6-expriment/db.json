@@ -1,0 +1,29 @@
+{
+  "Todos": [
+    {
+      "id": 1,
+      "title": "Visual Studio Code",
+      "description": "A lightweight but powerful source code editor developed by Microsoft."
+    },
+    {
+      "id": 2,
+      "title": "Postman",
+      "description": "An API platform for building and testing APIs."
+    },
+    {
+      "id": 3,
+      "title": "GitHub",
+      "description": "A platform for version control and collaboration using Git."
+    },
+    {
+      "id": 4,
+      "title": "Figma",
+      "description": "A collaborative interface design tool used for UI/UX design."
+    },
+    {
+      "id": 5,
+      "title": "Chrome DevTools",
+      "description": "Built-in browser tools to inspect and debug web pages."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input oninput="Debounced()" id="firstnumber" type="text" placeholder="First number" /><br />
+    <input oninput="Debounced()" id="secondnumber" type="text" placeholder="Second number" /><br />
+   
+    <div id="finalSum"></div>
+
+    <script>
+        let timeout;
+        function Debounced (){
+            clearTimeout(timeout);
+            timeout = setTimeout(function(){
+                populateDiv();
+
+            },1000);
+        }
+      async function populateDiv() {
+        const a = document.getElementById("firstnumber").value;
+        const b = document.getElementById("secondnumber").value;
+
+        const response = await fetch("http://localhost:3000/sum?a=" + a + "&b=" + b); 
+        const ans = await response.text();
+
+        document.getElementById("finalSum").innerHTML = ans;
+      }
+    </script>
+  </body>
+</html>
